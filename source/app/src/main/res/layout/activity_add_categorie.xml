@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presenteurs.ModelesCRUD.AddCategorieActivity"
+    android:padding="5dp"
+    android:background="@color/BlueVioletTrans">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        android:background="@color/White"
+
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+
+        >
+
+
+       <EditText
+           android:id="@+id/title_categorie_add"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:hint="Nom de la categorie"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+
+
+
+        <EditText
+            android:hint="Description"
+            android:id="@+id/desc_categorie_add"
+   android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+ />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+      android:gravity="center">
+
+        <Button
+            android:id="@+id/add_add_categorie"
+      android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/checked"
+           />
+
+        <Button
+            android:id="@+id/cancel_add_categorie"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/multiply" />
+    </LinearLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

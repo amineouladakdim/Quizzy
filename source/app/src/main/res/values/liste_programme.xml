@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="liste_programme">
+        <item>Bas de Corps</item>
+        <item>Haut de Corps</item>
+    </string-array>
+</resources>

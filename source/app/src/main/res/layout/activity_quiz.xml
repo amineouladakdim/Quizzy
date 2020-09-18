@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projects.novasoft.myquizzs.Presenteurs.QuizActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/quiz_back"
+    >
+
+    <TextView
+        android:text="Score : 0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+android:background="@color/DarkSlateBlue"
+
+        android:gravity="center"
+        android:id="@+id/score_txt" />
+
+    <TextView
+        android:text="Question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".30"
+   android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/greyWhite"
+        android:textColor="@color/White"
+        android:textSize="30dp"
+        android:id="@+id/question_ennonce" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:id="@+id/proposition_container_table"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+       />
+
+
+</LinearLayout>

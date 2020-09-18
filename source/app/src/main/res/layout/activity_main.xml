@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ouladakdimamine.myquizzs_v2.myquizzs.Presenteurs.CategorieGameActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/quiz_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/DarkSlateBlue">
+
+        <TextView
+            android:id="@+id/listecategorie_label"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:text="Liste des categories"
+            android:textColor="@color/White"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+
+            />
+
+        <ImageButton
+            android:background="@drawable/importicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imprtxmlquizzs_button" />
+        />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+  android:layout_weight="1"
+        android:id="@+id/listecat"
+        android:scrollbars="vertical"/>
+
+
+
+</LinearLayout>

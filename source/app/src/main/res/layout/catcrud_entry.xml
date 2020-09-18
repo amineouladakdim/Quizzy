@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    app:cardBackgroundColor="#40E9EAEE"
+
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <EditText
+            android:maxLength="20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Categorie"
+
+            android:ems="10"
+android:textColor="@color/titleColor"
+            android:id="@+id/catcrud_label"
+            android:layout_weight=".7" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".3"
+            android:layout_gravity="center">
+
+
+            <ImageButton
+                android:background="@drawable/updateicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/updatecat_button" />
+
+            <ImageButton
+                android:background="@drawable/deleteicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/deletecat_button" />
+
+            <Button
+                android:background="@drawable/checkbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/checkcat_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presenteurs.GestionQuizzsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/avertissement"
+            android:text="Veuillez choisir une question au préalable"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="16sp"
+            android:background="@color/LightGreen"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@color/BlueVioletTrans"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.98"
+
+                android:paddingLeft="10dp"
+                android:textColor="@color/White"
+
+                android:text="Liste des propositions"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                />
+
+            <Button
+                android:id="@+id/add_crud_proposition"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/plus_symbol"
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/liste_question"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/liste_propositions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="71dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

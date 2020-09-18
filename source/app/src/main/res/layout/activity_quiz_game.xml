@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="@drawable/quiz_back"
+    >
+
+    <TextView
+        android:text="Liste des Quizzs"
+        android:layout_width="match_parent"
+        android:id="@+id/listequiz_label"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_height="50dp"
+        android:background="@color/DarkSlateBlue" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:id="@+id/listequiz"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

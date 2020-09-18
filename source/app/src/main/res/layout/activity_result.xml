@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ouladakdimamine.myquizzs_v2.myquizzs.Presenteurs.ResultActivity"
+    android:background="@drawable/quiz_back">
+
+    <Button
+        android:background="@drawable/homeicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/activityresult_mainmenu" />
+
+    <TextView
+        android:text="Fin de la partie"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/mention_text"
+        android:textSize="25sp"
+        android:background="@color/DarkSlateBlue"
+        android:textColor="@color/White"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <Button
+       android:background="@drawable/replayicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/replay_button"
+        android:layout_alignBaseline="@+id/activityresult_mainmenu"
+        android:layout_alignBottom="@+id/activityresult_mainmenu"
+        android:layout_alignStart="@+id/result_score" />
+
+    <TextView
+        android:text="Score : 0"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:id="@+id/result_score"
+
+        android:textColor="@color/White"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
